@@ -1,0 +1,88 @@
+<html>
+<script type=" text/javascript " src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js "></script>
+<style>
+    body {
+        background-image: url("3.jpg");
+        background-size: 1500px;
+    }
+    
+    h1 {
+        margin-left: -300px;
+        font-size: 50px;
+        text-shadow: 2px 2px black Grey;
+    }
+    
+    a {
+        font-size: 35px;
+        display: inline-block;
+        border: 1px;
+        color: black;
+        margin-top: 0px;
+        text-decoration: none;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+    form {
+        
+        border-color: black;
+        margin-top:70px;
+        margin-left:0px;
+        border-radius: 2px;
+    
+    }
+    
+    button {
+        color: black;
+        text-decoration: none;
+        margin-left: 50px;
+        border-color: black;
+    }
+    
+    input {
+        margin-left: 30px;
+        height: 20px;
+        border: 5px;
+        border-color: Black;
+        border-width: 3px;
+    }
+    h3{
+        margin-left:150px;
+
+    }
+</style>
+
+<body>
+    <title>EMPLOYEE PORTAL SYSTEM</title>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("ID incorrect..ID minimum 6 digit");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+    <h3>USER ENTRY !</h3>
+<form name="myform" method="post" action="admin.php" onsubmit="return validateform()" >  
+Name of Employee: <input type="text" name="name"><br/>
+
+<br>  
+ID of Employee : <input type="password" name="password"><br/>
+<br>  
+<button type="submit" value="Enter">  ENTER</button>
+</form>  
+</body>
+
+
+ 
+
+</html>
